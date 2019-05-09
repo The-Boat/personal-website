@@ -13,18 +13,36 @@ nav{
     background: grey;
 }
 
+footer {
+    height: 10vh;
+    padding : 40px;
+    align-items: center;
+    background: grey;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    width: 30vh;
+    height: 100vh;
+}
+
+footer a:hover{
+    color: darkgrey;
+}
+
 .nav-links{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 30%;
-    height: 100%;
+    height: 100%; 
     justify-content: space-around;
     list-style: none;
     align-items: center;
 }
 
-.nav-links .link-left .anchor{
+.nav-links .link .anchor{
     color: white;
     text-decoration: none;
     float: left;
@@ -32,32 +50,17 @@ nav{
     font-size:  16px;
 }
 
-.nav-links .link-right .anchor{
-    color: black;
-    float: right;
-    text-decoration: none;
-    margin-right: auto;
-    font-size:  16px;
-}
-
-/*Test - will be removed.*/
-
 .landing{
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.landing .test {
-    margin: 100px;
-    font-size: 50px;
-    color: black;   
-}
 
 /*Adapt nav bar to mobile.*/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 667px){
     .line{
         width: 30px;
         height: 3px;
@@ -81,11 +84,11 @@ nav{
     .nav-links {
         position: fixed;
         background: grey;
-        height: 100vh;
+        height: 50%;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
+        clip-path: circle(50px at 90% -10%);
+        -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
     }
 
@@ -100,7 +103,7 @@ nav{
     }
 
     .nav-links .link .anchor{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .nav-links li:nth-child(1){
@@ -118,5 +121,11 @@ nav{
     li.fade{
         opacity: 1;
     }
+
+    footer .footer-anchor{
+        visibility: hidden;
+    }
+
+
 
 }
