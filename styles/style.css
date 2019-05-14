@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.landing{
+    height: 70vh;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.landing h1 {
+    text-align: left;
+}
+
+.landing h2 {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.landing .image {
+    width: 50%;
+    height: 60%;
+    background: green;
+}
+
+.landing .intro {
+    float: right;
+    width: 50%;
+    background: red;
+}
+
+@media screen and (max-width: 667px){
+    .landing{
+        flex-direction: column;
+    }
+}
