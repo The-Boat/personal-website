@@ -73,24 +73,32 @@ footer a:hover{
 }
 
 .nav-links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 30%;
-    height: 100%; 
-    justify-content: space-around;
-    list-style: none;
-    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.nav-links .link .anchor{
-    color: white;
-    text-decoration: none;
+.nav-links li {
     float: left;
-    margin-left: auto;
-    font-size:  16px;
 }
 
+.nav-links li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;   
+}
+
+.nav-links li a:hover:not(.active) {
+    background-color: darkgray;
+}
+
+ 
 /*Adapt nav bar to mobile.*/
 
 @media screen and (max-width: 667px){
@@ -116,10 +124,15 @@ footer a:hover{
     
     .nav-links {
         position: fixed;
-        background: grey;
-        height: 50%;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
+        background: grey;
+        height: 75%;
+        width: 100%;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
         clip-path: circle(50px at 90% -10%);
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
@@ -131,8 +144,12 @@ footer a:hover{
         pointer-events: all;
     }
     
-    .nav-links .link .anchor{
-        font-size: 20px;
+    .nav-links li a{
+        color: white;
+        text-decoration: none;
+        float: left;
+        margin-left: auto;
+        font-size:  16px;
     }
     
     .nav-links li:nth-child(1){
@@ -145,6 +162,18 @@ footer a:hover{
     
     .nav-links li:nth-child(3){
         transition: all 0.5s ease 0.6s;
+    }
+    
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.8s;
+    }
+    
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 1.0s;
+    }
+    
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 1.2s;
     }
     
     li.fade{
