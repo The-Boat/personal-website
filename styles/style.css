@@ -24,39 +24,42 @@ body {
     text-align: left;
 }
 
-.landing .image img {
-    width: 50%;
-    height: 50%;
-    float: right;
-}
-
-.landing .intro {
-    width: 50%;
-    height: 100%;
-    background: red;
-}
-
-.landing .info p {
+.landing p {
     border: 2px;
-    width :45%;
+    width: 270px;
+    height: 404px;
+    padding-right: 6.25%;
+    padding-left: 6.25%;
     float: left;
-    padding-bottom: 75%;
+    text-align: left;
+    font-size: 18px;
     border-style: solid;
     border-color: black;
 }
 
+.landing img {
+    width: 270px;
+    height: 404px;
+    padding-right: 6.25%;
+    padding-left: 6.25%;
+    float: right;
+}
+
 nav{
     height: 10vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background: grey;
 }
 
 footer {
     height: 10vh;
-    padding : 1rem;
-    position: absolute;
+    position: fixed;
     right: 0;
-    bottom: 0;
     left: 0;
+    bottom: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     align-items: center;
     background: grey;
     text-align: center;
